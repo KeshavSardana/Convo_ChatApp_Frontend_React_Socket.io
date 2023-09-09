@@ -25,7 +25,10 @@ const MyChats = ({ fetchAgain }) => {
         },
       };
 
-      const { data } = await axios.get("/api/chat", config);
+      const { data } = await axios.get(
+        "https://convo-chatapp-backend.onrender.com/api/chat",
+        config
+      );
       setChats(data);
       // console.log("Data from fetch chats function is : ", { data });
     } catch (error) {
