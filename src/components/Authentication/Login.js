@@ -48,7 +48,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "https://convo-chatapp-backend.onrender.com/api/user/login",
         { email, password },
         config
       );

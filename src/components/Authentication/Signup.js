@@ -104,7 +104,7 @@ const Signup = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user",
+        "https://convo-chatapp-backend.onrender.com/api/user",
         { name, email, password },
         config
       );
