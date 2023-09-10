@@ -13,11 +13,8 @@ const Chatpage = () => {
     <div style={{ width: "100%" }}>
       {user && <SideDrawer />}
       <Box
-        d="flex"
-        justifyContent="space-between"
-        alignContent="space-around"
-        alignItems="center"
-        flexDirection="row"
+        display="flex"
+        justifyContent={"space-between"}
         w="100%"
         h="91.5vh"
         p="10px"

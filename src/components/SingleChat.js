@@ -170,10 +170,10 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             pb={3}
             px={2}
             w="100%"
-            fontFamily="Work sans"
-            d="flex"
+            fontFamily={"Work sans"}
+            display="flex"
             justifyContent={{ base: "space-between" }}
-            alignItems="center"
+            alignItems={"center"}
           >
             <IconButton
               d={{ base: "flex", md: "none" }}
@@ -200,14 +200,14 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               ))}
           </Text>
           <Box
-            d="flex"
+            display="flex"
             flexDir="column"
-            justifyContent="flex-end"
+            justifyContent={"flex-end"}
             p={3}
             bg="#E8E8E8"
             w="100%"
             h="100%"
-            borderRadius="lg"
+            borderRadius={"lg"}
             overflowY="hidden"
           >
             {loading ? (
@@ -224,12 +224,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               </div>
             )}
 
-            <FormControl
-              onKeyDown={sendMessage}
-              id="first-name"
-              isRequired
-              mt={3}
-            >
+            <FormControl onKeyDown={sendMessage} isRequired mt={3}>
               {istyping ? (
                 <div>
                   <Lottie
